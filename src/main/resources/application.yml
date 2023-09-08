@@ -1,0 +1,18 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  data:
+    rest:
+      basePath: /api
+  datasource:
+    driver-class-name: "org.hsqldb.jdbc.JDBCDriver"
+    password: ""
+    url: "jdbc:hsqldb:file:/home/pnoel/Documents/GitHub/Projects/database"
+    username: "sa"
+  jpa:
+    hibernate:
+      ddl-auto: "create"
